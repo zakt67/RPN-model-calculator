@@ -12,7 +12,7 @@ Clone the project :
 
 Go to the project directory :
 ```bash
-  cd ./ReversePolishNotation
+  cd ./RPN-model-calculator
 ```
 
 Create a new python file and import *rpn.py* file :
