@@ -39,7 +39,7 @@ Format exemple :
 
 Add assertion tests (Optionnal) :
 ```python
-    # Digits
+  # Digits
   assert digits_calculation("132-+") == 2
 
   # Numbers
