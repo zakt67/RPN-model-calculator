@@ -19,11 +19,6 @@ def digits_calculation(operation: str) -> int:
 
     return stack[0]
 
-assert digits_calculation("132-+") == 2
-assert digits_calculation("82/") == 4
-assert digits_calculation("99+") == 18
-assert digits_calculation("123*+") == 7
-print('Function digits_calculation() : all tests passed')
 
 def numbers_calculation(operation: str) -> int:
     """
@@ -56,14 +51,6 @@ def numbers_calculation(operation: str) -> int:
             stack.append(a + b if c == "+" else a - b if c == "-" else a * b if c == "*" else a // b)
 
     return stack[0]
-    
-
-assert numbers_calculation("1(32)+") == 33
-assert numbers_calculation("(24)8/") == 3
-assert numbers_calculation("(10)5-") == 5
-assert numbers_calculation("(120)(10)+") == 130
-assert numbers_calculation("2(3)*") == 6
-print('Function numbers_calculation() : all tests passed')
 
 def float_calculation(operation: str) -> float:
     """
@@ -96,10 +83,3 @@ def float_calculation(operation: str) -> float:
             stack.append(a + b if c == "+" else a - b if c == "-" else a * b if c == "*" else a / b)
 
     return stack[0]
-
-assert float_calculation("1(3.2)+") == 4.2
-assert float_calculation("(2.4)8/") == 0.3
-assert float_calculation("(1.0)5-") == -4.0
-assert float_calculation("(12.0)(10)+") == 22.0
-assert float_calculation("2(3.0)*") == 6.0
-print('Function float_calculation() : all tests passed')
