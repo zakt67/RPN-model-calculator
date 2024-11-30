@@ -12,7 +12,7 @@ Clone the project :
 
 Go to the project directory :
 ```bash
-  cd ./ReversePolishNotation
+  cd ./RPN-model-calculator
 ```
 
 Create a new python file and import *rpn.py* file :
@@ -39,7 +39,7 @@ Format exemple :
 
 Add assertion tests (Optionnal) :
 ```python
-    # Digits
+  # Digits
   assert digits_calculation("132-+") == 2
 
   # Numbers
